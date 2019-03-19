@@ -1,0 +1,9 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": ["error", "windows"],
+        "indent": ["error", 4],
+        "consistent-return": "off",
+        "no-param-reassign": "off"
+    }
+}
