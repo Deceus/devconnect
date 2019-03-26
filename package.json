@@ -1,31 +1,35 @@
 {
-  "name": "devconnect",
-  "version": "1.0.0",
-  "description": "Social network for developers",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
-  },
-  "author": "Chris Castor",
-  "license": "MIT",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "gravatar": "^1.8.0",
-    "jsonwebtoken": "^8.5.0",
-    "mongoose": "^5.4.17",
-    "passport": "^0.4.0",
-    "passport-jwt": "^4.0.0",
-    "validator": "^10.11.0"
-  },
-  "devDependencies": {
-    "eslint": "^5.15.3",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
-    "nodemon": "^1.18.10"
-  }
+    "name": "devconnect",
+    "version": "1.0.0",
+    "description": "Social network for developers",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Chris Castor",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.3",
+        "concurrently": "^4.1.0",
+        "express": "^4.16.4",
+        "gravatar": "^1.8.0",
+        "jsonwebtoken": "^8.5.0",
+        "mongoose": "^5.4.17",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "validator": "^10.11.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.12.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-jsx-a11y": "^6.2.1",
+        "eslint-plugin-react": "^7.12.4",
+        "nodemon": "^1.18.10"
+    }
 }
